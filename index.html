@@ -36,9 +36,17 @@
             margin-top: 5px;
             color: #ffcccc;
         }
-        p {
-            max-width: 800px;
+        /* Caixa de texto com fundo */
+        .text-box {
+            background-color: rgba(0,0,0,0.4);
+            padding: 15px 20px;
+            border-radius: 12px;
+            max-width: 850px;
             margin: 15px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .text-box p {
+            margin: 0 0 10px;
             line-height: 1.6;
             font-size: 1.1em;
         }
@@ -86,7 +94,10 @@
                 padding: 0 15px; /* respiro lateral */
             }
             main p {
-                text-align: center; /* leitura melhor no celular */
+                text-align: justify;
+            }
+            header img {
+                width: 300px; /* logo menor no celular */
             }
         }
     </style>
@@ -102,9 +113,11 @@
 </header>
 
 <main>
-    <p>Na nossa farmácia, você encontra uma seleção completa de medicamentos, produtos de perfumaria, higiene pessoal e cuidados especiais para toda a família.</p>
-    <p>Trabalhamos sempre com ofertas imperdíveis, atendimento atencioso e personalizado, garantindo que a sua saúde, bem-estar e economia estejam sempre em primeiro lugar. Aqui, cada cliente é tratado com carinho e dedicação, porque cuidar de você é a nossa prioridade.</p>
-    <p>📍 Avenida Castelo Branco, 180 - Centro | Vargem Grande, Maranhão</p>
+    <div class="text-box">
+        <p>Na nossa farmácia, você encontra uma seleção completa de medicamentos, produtos de perfumaria, higiene pessoal e cuidados especiais para toda a família.</p>
+        <p>Trabalhamos sempre com ofertas imperdíveis, atendimento atencioso e personalizado, garantindo que a sua saúde, bem-estar e economia estejam sempre em primeiro lugar. Aqui, cada cliente é tratado com carinho e dedicação, porque cuidar de você é a nossa prioridade.</p>
+        <p>📍 Avenida Castelo Branco, 180 - Centro | Vargem Grande, Maranhão</p>
+    </div>
 
     <!-- Botões -->
     <a class="btn" href="https://wa.me/559892341014" target="_blank">
@@ -113,10 +126,10 @@
     <a class="btn btn-instagram" href="https://www.instagram.com/farmaciavargemfarma/" target="_blank">
         <img src="instagram.png" alt="Instagram"> Instagram
     </a>
-    <a class="btn btn-phone" href="tel:+559891479383">
+    <a class="btn btn-phone" href="tel:+5598999999999">
         <img src="telefone.png" alt="Telefone"> Vargem Farma 1
     </a>
-    <a class="btn btn-phone" href="tel:+559892341014">
+    <a class="btn btn-phone" href="tel:+5598888888888">
         <img src="telefone.png" alt="Telefone"> Vargem Farma 2
     </a>
 </main>
@@ -128,4 +141,3 @@
 
 </body>
 </html>
-
